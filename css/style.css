@@ -10,6 +10,7 @@ body {
 
 input {
     border: 2px solid #cdd3e4;
+    font-size: 18px;
 }
 
 input:focus {
@@ -87,4 +88,42 @@ input:focus {
 
 .numero2 {
     width: 100%;
+}
+
+/* Botones */
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+}
+@media (max-width: 600px) {
+    .botones {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .boton {
+        margin-bottom: 20px;
+    }
+}
+
+.boton {
+    text-align: center;
+    font-size: 18px;
+    background-color: #67b1c2;
+    padding: 8px;
+    border-radius: 2px;
+    border: 2px solid #2e7d8f;
+    transition: 0.2s;
+}
+
+.boton span {
+    color: #000004;
+    margin-right: 3px;
+}
+
+.boton:hover {
+    cursor: pointer;
+    background-color: #6796d5;
 }
