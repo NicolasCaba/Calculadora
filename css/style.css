@@ -1,0 +1,90 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+    border: 2px solid #cdd3e4;
+}
+
+input:focus {
+    outline: none;
+    border-color: #67b1c2;
+}
+
+.contenedor {
+	background-color: #f6f9f9;
+	max-width: 650px;
+	margin: 30px auto;
+	padding: 20px;
+    box-shadow: 8px 8px 15px 2px #b9b9b9;
+    border-radius: 3px;
+}
+
+.pantalla {
+    display: flex;
+	margin-bottom: 12px;
+    border-bottom: 3px solid #284a66;
+    padding: 5px 0 15px 0;
+}
+
+.pantalla input {
+    display: block;
+    width: 92%;
+    height: 35px;
+    border-radius: 5px 0 0 5px;
+}
+
+.btn-limpiar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #376a75;
+    color: white;
+    width: 8%;
+    height: 35px;
+    border: 2px solid #cdd3e4;
+   border-radius: 0 5px 5px 0;
+}
+
+.fa-backspace {
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+
+.btn-limpiar:hover .fa-backspace {
+    color: #223f46;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .pantalla input {
+        width: 84%;
+    }
+    .btn-limpiar {
+        width: 16%;
+    }
+}
+
+/* Campos */
+
+.campos {
+    display: flex;
+    gap: 10px;
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+.numero1 {
+    width: 100%;
+}
+
+.numero2 {
+    width: 100%;
+}
